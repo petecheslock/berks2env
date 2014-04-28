@@ -1,5 +1,4 @@
 [![Build Status](https://travis-ci.org/petecheslock/berks2env.svg?branch=master)](https://travis-ci.org/petecheslock/berks2env)
-
 berks2env
 =========
 
