@@ -1,12 +1,5 @@
-#!/usr/bin/env ruby
-
 require "berkshelf"
 require "chef/environment"
-
-if Berkshelf::VERSION < "3"
-  puts "Berkshelf 3 or higher is required to run"
-  exit 1
-end
 
 if ARGV.length != 2
   puts "Usage: berks2env <version/branch> <berkslock>"
