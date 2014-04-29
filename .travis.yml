@@ -8,8 +8,8 @@ script:
 deploy:
   provider: rubygems
   api_key:
-    secure: aue9Co0K9XVWtwRNSilPrJ7B31PAFe1MoBgp8M6qt2/Ssr+1fFxAB/7ZEtjyWbanYWZMGEFyflUnR0GBA8WMrld64k3hkAwgpOo2anmuwcN9jDTpFPsQ63/0aEfuo761Dg3CmflsZIHzw+wVY9NAEAVSmm+juDM3JudyVzZ/EPM=
-  gem: berks2env
+    secure: bDOj3IJ0kZWKvLTb4c/Y9for/QPttyhGJBKr89Rhx6D1iAFahOFf09Md25CjymaC91tVdXoRgI1lTiyi1EYSJx0VF5Rk/wNjHT3vIBBVsnZtNE+lSkKfgd0qhh7Xt/YQbVxXFxlkVNJhiNf72QuESRwb9d/MPoz+5Wmje3KX9kM=
+  gemspec: berks2env.gemspec
   on:
     tags: true
     repo: petecheslock/berks2env
