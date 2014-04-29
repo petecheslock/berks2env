@@ -1,7 +1,6 @@
 language: ruby
 rvm:
 - 2.1.1
-- 2.0.0
 - 1.9.3
 script:
 - bundle exec rake
@@ -12,4 +11,5 @@ deploy:
   gemspec: berks2env.gemspec
   on:
     tags: true
+    rvm: 2.1.1
     repo: petecheslock/berks2env

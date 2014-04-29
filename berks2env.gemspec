@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.authors     = ['Pete Cheslock']
   s.email       = 'petecheslock@gmail.com'
   s.homepage    = 'https://github.com/petecheslock/berks2env'
-  s.summary     = %q(Convert a Berkshelf Lockfile to a Chef Environment json)
+  s.summary     = %q(Solve Berks Lock file to Environment)
   s.description = %q(Convert a Berkshelf Lockfile to a Chef Environment json)
   s.has_rdoc    = false
   s.license       = 'MIT'
@@ -18,11 +18,10 @@ Gem::Specification.new do |s|
   s.test_files    = s.files.grep(%r{^(test|spec|features)/})
   s.require_paths = ['lib']
 
-  s.add_dependency('chef', ['~> 11.8'])
-  s.add_dependency('json', ['~> 1.7.7'])
-  s.add_dependency('berkshelf', ['~> 3.1'])
-  s.add_dependency('thor-scmversion', ['= 1.4.0'])
-  s.add_development_dependency('rubocop', ['~> 0.21.0'])
-  s.add_development_dependency('rake')
+  s.add_runtime_dependency('chef', ['~> 11.8'])
+  s.add_runtime_dependency('json', ['~> 1.7', '>= 1.7.7'])
+  s.add_runtime_dependency('berkshelf', ['~> 3.1'])
+  s.add_development_dependency('rubocop', ['~> 0.21'])
+  s.add_development_dependency('rake', ['~> 0'])
 
 end
