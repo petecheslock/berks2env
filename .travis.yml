@@ -1,5 +1,15 @@
 language: ruby
-
 rvm:
+- 2.1.1
 - 2.0.0
 - 1.9.3
+deploy:
+  provider: rubygems
+  api_key:
+    secure: kY/p1rEAm3M5i6xthmU6zR1xQ4y2puHCRj6lhMjlo5eF9/jOqjBVE2GfyOZ+ZA3yuenBKO5kixesc/0zIWfxQakqjsFlW1h0Wl6+w67Rrphbbr9PPXoUuQ/QJ8Hic7v8xv2wefhtkLJ3B0b7DP3jlyuE02qAzBATae/kHS27AtM=
+  gem: berks2env
+  on:
+    tags: true
+    repo: petecheslock/berks2env
+script:
+- bundle exec rake
