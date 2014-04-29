@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/petecheslock/berks2env.svg?branch=master)](https://travis-ci.org/petecheslock/berks2env)
+[![Gem Version](https://badge.fury.io/rb/berks2env.svg)](http://badge.fury.io/rb/berks2env)
 berks2env
 =========
 Convert a Berkshelf Lockfile to a Chef Environment json
