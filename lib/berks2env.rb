@@ -14,8 +14,9 @@ module Berks2Env
     end
 
     def run
+      clean_branch = self.sanitize_branch
       environment = Chef::Environment.new
-      environment.name(sanitize)
+      environment.name(clean_branch)
       berksfile = Berkshelf::Lockfile.from_file(@berkslockfile)
       locks = berksfile.graph.locks.inject({}) do |hash, (name, dependency)|
         hash[name] = "= #{dependency.locked_version.to_s}"
@@ -24,7 +25,7 @@ module Berks2Env
       environment.cookbook_versions(locks)
 
       environment.override_attributes({ :server_env => { :version => { :real => @branch, :virt => @branch }}})
-      envfile = File.open("#{@branch}.json", 'w')
+      envfile = File.open("#{clean_branch}.json", 'w')
       envfile.write(environment.to_json)
       envfile.close
       if @branch.match(/\d+\.\d+\.\d+\z/)
@@ -39,11 +40,11 @@ module Berks2Env
       end
     end
 
-    def sanitize
-      if @branch =~ /\d+\.\d+\.\d+/
-        @branch.gsub('.','_')
+    def sanitize_branch
+      if self.branch =~ /\d+\.\d+\.\d+/
+        self.branch.gsub('.','_')
       else
-        @branch.gsub(/[\-;:,.\/\\']/,'_')
+        self.branch.gsub(/[\-;:,.\/\\']/,'_')
       end
     end
 
