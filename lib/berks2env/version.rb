@@ -2,5 +2,5 @@
 
 # This module holds the Berks2Env version info
 module Berks2Env
-  VERSION = '0.0.1'
+  VERSION = IO.read(File.join(File.dirname(__FILE__), '..', '..', 'VERSION')) rescue "0.0.1"
 end

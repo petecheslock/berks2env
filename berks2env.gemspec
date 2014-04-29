@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
   s.add_dependency('chef', ['~> 11.8'])
   s.add_dependency('json', ['~> 1.7.7'])
   s.add_dependency('berkshelf', ['~> 3.1'])
+  s.add_dependency('thor-scmversion', ['= 1.4.0'])
   s.add_development_dependency('rubocop', ['~> 0.21.0'])
   s.add_development_dependency('rake')
 
