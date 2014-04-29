@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    berks2env (0.0.1)
+    berks2env (0.0.2)
       berkshelf (~> 3.1)
       chef (~> 11.8)
       json (~> 1.7.7)
