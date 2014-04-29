@@ -11,5 +11,5 @@ deploy:
   gemspec: berks2env.gemspec
   on:
     tags: true
-    rvm: 2.1.1
+    all_branches: true
     repo: petecheslock/berks2env
