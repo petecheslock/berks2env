@@ -21,7 +21,7 @@ https://www.youtube.com/watch?v=L__8o02od6Q
 Use [this link](http://youtu.be/L__8o02od6Q?t=21m16s) to jump directly to the section I talk about Jenkins/CI workflows
 If you just want the original script we used on CI (per the talk above) - you can [find it here](https://github.com/petecheslock/berks2env/blob/4fa764134c11912a9c82391540903697fe7fe5a6/berks2env.rb)
 
-* Going to eventually convert this into a rubygem, and maybe even propose as a feature update to Berks3
+* ~~Going to eventually convert this into a rubygem~~
 * Going to support another command option to injest json into the resultant environment json
 * General cleanup and refactor to make it more flexible.
 * This is raw and has only a single specific use case - Watch my talk if you want
