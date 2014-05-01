@@ -23,5 +23,9 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency('berkshelf', ['~> 3.1'])
   s.add_development_dependency('rubocop', ['~> 0.21'])
   s.add_development_dependency('rake', ['~> 0'])
+  s.add_development_dependency('rspec-core', ['~> 2.14.8'])
+  s.add_development_dependency('rspec-mocks', ['~> 2.14.6'])
+  s.add_development_dependency('rspec-expectations', ['~> 2.14.5'])
+  s.add_development_dependency('rspec', ['~> 0'])
 
 end
